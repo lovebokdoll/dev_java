@@ -16,7 +16,13 @@ public class MemberVOmain {
   memberVO.setMem_id("tomato");
   // System.out.println(MemberVO.mem_id);//이렇게 하면 안됨 private이라서 !!!
   String id = memberVO.getMem_id();
-
+  System.out.println(id);
   System.out.println(memberVO.getMem_id());// 이렇게 해야 불러올 수 있음
+  // 19번 20번 줄은 같음
+  // mem_name의 경우 접근제한자를 public으로 했으므로 직접 초기화가 가능하다.
+  memberVO.mem_name = "토마토";
+  String name = memberVO.mem_name;// null
+  System.out.println(name);
+  System.out.println(memberVO.mem_name);
  }
 }

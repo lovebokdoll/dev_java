@@ -6,7 +6,7 @@ public class MemberVO {
  private String mem_id = null;
  private String mem_pw = null;
  private String mem_name = null;
- // 자료구조의 일부로 사용함
+
  // 회원정보를 관리하기위한 목적으로 설계하였다-그래서 메인메소드는 필요 없음
  // private 보안정보
 
@@ -19,5 +19,11 @@ public class MemberVO {
  // getter 는 read,듣기
  public String getMem_id() {
   return mem_id;
+ }
+
+ public static void main(String[] args) {
+  MemberVO memberVO = new MemberVO();
+
+  System.out.println(memberVO.mem_id);// 초기화를 안했으니까 null출력
  }
 }
