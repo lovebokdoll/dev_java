@@ -1,8 +1,18 @@
 package dev_java.ch01;
 
 public class Hello {
+
+    int methodA(int i, int j) {
+        int hap;
+        hap = i + j;
+        return hap;
+    }
+
     public static void main(String[] args) {
-        System.out.println("git 설정추가");
-        System.out.println("hello");
+        Hello hello = new Hello();
+        hello.methodA(2, 3);
+
+        // System.out.println("git 설정추가");
+        // System.out.println("hello");
     }
 }
