@@ -10,14 +10,24 @@ public class 피보나치수열 {
  public static void main(String[] args) {
   int Preprevious = 1;// 전전항(n-2)
   int Previous = 1;// 전항(n-1)
-  // 현재 항:n
-  System.out.println("a" + Preprevious);
-  System.out.println("a" + Previous);
-  for (int i = 3; i <= 6; i++) {
-   int currentI = Preprevious + Previous;
-   System.out.println("a" + currentI);
+  int Current = 0;
+  System.out.print(Preprevious + " " + Previous + " ");
+  for (int i = 0; i < 8; i++) {
+   Current = Preprevious + Previous;
+   System.out.print(Current + " ");
    Preprevious = Previous;
-   Previous = currentI;
+   Previous = Current;
   }
+  // 현재 항:n
+  /*
+   * System.out.println("a" + Preprevious);
+   * System.out.println("a" + Previous);
+   * for (int i = 3; i <= 6; i++) {
+   * int currentI = Preprevious + Previous;
+   * System.out.println("a" + currentI);
+   * Preprevious = Previous;
+   * Previous = currentI;
+   * }
+   */
  }
 }
