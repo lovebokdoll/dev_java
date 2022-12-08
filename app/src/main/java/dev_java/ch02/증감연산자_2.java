@@ -1,7 +1,9 @@
 package dev_java.ch02;
 
 public class 증감연산자_2 {
-
+/* & 는 앞의 조건식이 false 여도 뒤의 조건식이 true인지 false 인지 판별
+   && 는 앞의 조건식이 false 라면, 뒤의 조건식은 true인지 false인지 신경쓰지 않는다.
+ 어차피 결과는 false이기 때문이다.*/
   public static void main(String[] args) {
     int i = 1;
     int j = 2;
