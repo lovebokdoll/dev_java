@@ -2,12 +2,17 @@ package dev_java.kh_test;
 
 public class Test3 {
  public static void main(String[] args) {
-  int[] arr = new int[4];
+  int arr[] = new int[4]; // 0,0,0,0
 
-  for (int i = 0; i < arr.length; i++) {
-   arr[i] += (10 + i);
-   System.out.println(arr[i]);
+  for (int i = 0; i <= arr.length; i++) {
+   try {
+    arr[i] += (10 + i);
+    System.out.println(arr[i]);
+   } catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println(e.toString());
+   }
   }
+  System.out.println("here");
  }
 }
 /*

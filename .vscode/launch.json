@@ -6,6 +6,62 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ButtonArray1",
+      "request": "launch",
+      "mainClass": "dev_java.view.array.ButtonArray1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch ButtonArray",
+      "request": "launch",
+      "mainClass": "dev_java.view.array.ButtonArray",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TwoArrayQuize",
+      "request": "launch",
+      "mainClass": "dev_java.ch03.TwoArrayQuize",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TwoArray2",
+      "request": "launch",
+      "mainClass": "dev_java.ch03.TwoArray2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TwoArray1",
+      "request": "launch",
+      "mainClass": "dev_java.ch03.TwoArray1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test2_1",
+      "request": "launch",
+      "mainClass": "dev_java.kh_test.Test2_1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test1_2",
+      "request": "launch",
+      "mainClass": "dev_java.kh_test.Test1_2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test1",
+      "request": "launch",
+      "mainClass": "dev_java.kh_test.Test1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch RandomGameDemo",
       "request": "launch",
       "mainClass": "dev_java.view.RandomGameDemo",

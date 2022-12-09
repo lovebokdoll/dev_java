@@ -4,25 +4,28 @@ import java.util.Scanner;
 
 public class Test1 {
 
- public void count() {
-  Scanner sc = new Scanner(System.in);
-  while (true) {
-   System.out.println("문자열을 입력해주세요:");
-   String str = sc.nextLine();
-   if (str.equals("exit")) {
+  public void count() {
+    Scanner sc = new Scanner(System.in);
+    boolean isOK = false;
+    while (!isOK) {
+      System.out.print("문자열을 입력해주세요:");
+      String str = sc.nextLine();
+      if ("exit".equals(str)) {
+        // equals(object) => for문의 조건식 자리 or if문 안에와야한다.!!
+        // 원시형 일때는 사용하지 않는다~~
+        break;// 무한반복 방지 , while문 탈출하기
+      } else {
+        System.out.println(str.length() + "글자입니다.");
+      }
+    } // end of while
+    sc.close();
+    System.out.println("프로그램을 종료합니다.");
+  }// end of count
 
-    break;
-   } else {
-    System.out.println(str.length() + "글자입니다.");
-   }
+  public static void main(String[] args) {
+    Test1 t1 = new Test1();
+    t1.count();
   }
-  System.out.println("프로그램을 종료합니다.");
- }
-
- public static void main(String[] args) {
-  Test1 t1 = new Test1();
-  t1.count();
- }
 }
 // 1."System.out.println("프로그램을 종료합니다.");​ " 의 위치가 잘못되었다.
 // 2.while문안에 false가 아니라 true가 들어가야한다
