@@ -6,6 +6,62 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch JTextAreaUI2",
+      "request": "launch",
+      "mainClass": "dev_java.week3.JTextAreaUI2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch JButtonUI",
+      "request": "launch",
+      "mainClass": "dev_java.week3.JButtonUI",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch JButtonMain",
+      "request": "launch",
+      "mainClass": "dev_java.week3.JButtonMain",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch JTextAreaUI",
+      "request": "launch",
+      "mainClass": "dev_java.week3.JTextAreaUI",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main2",
+      "request": "launch",
+      "mainClass": "dev_java.week3.Main2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Sub2",
+      "request": "launch",
+      "mainClass": "dev_java.week3.Sub2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Sub1",
+      "request": "launch",
+      "mainClass": "dev_java.week3.Sub1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "dev_java.week3.Main",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch ButtonArray1",
       "request": "launch",
       "mainClass": "dev_java.view.array.ButtonArray1",
