@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Area_1",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.Area_1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch StaticArea",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.StaticArea",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Area",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.Area",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch AddressBook",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.AddressBook",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch AddressDialog",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.AddressDialog",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch JTextAreaUI2",
       "request": "launch",
       "mainClass": "dev_java.week3.JTextAreaUI2",

@@ -6,11 +6,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import org.checkerframework.common.returnsreceiver.qual.This;
-
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 public class JTextAreaUI2 {
    // 선언부
 
