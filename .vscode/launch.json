@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Quiza4",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.Quiza4",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch GradeView",
+      "request": "launch",
+      "mainClass": "dev_java.week3.GradeView",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch hihi",
       "request": "launch",
       "mainClass": "dev_java.week3quize.hihi",

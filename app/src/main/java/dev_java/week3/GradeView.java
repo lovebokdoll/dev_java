@@ -101,7 +101,7 @@ public class GradeView extends JFrame implements ActionListener {
       this.add("North", jp1);
       this.add("South", jp3);
       setTitle("성적처리");
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//창모서리 X버튼 닫기 처리
+      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// 창모서리 X버튼 닫기 처리
       setLocation(200, 200);// 창이 열리는 위치
       setSize(400, 250);
       setVisible(true);
@@ -184,9 +184,8 @@ public class GradeView extends JFrame implements ActionListener {
 
          // 석차를 매겨보자.
 
-           // 위 2중 for문에서 처리된 결과를
-           // 테이블에 반영하기
-
+         // 위 2중 for문에서 처리된 결과를
+         // 테이블에 반영하기
 
       } ////////////// end of 처리 버튼 구현
       else if (e.getSource() == jbtn_exit) {
