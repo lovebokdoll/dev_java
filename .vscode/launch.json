@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch hello",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.hello",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch RectAngle3Main",
       "request": "launch",
       "mainClass": "dev_java.week3quize.RectAngle3Main",
