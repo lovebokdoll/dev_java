@@ -24,7 +24,4 @@ public class AddressDialog {
     // 파라미터를 통해서 결정하도록 한다.
   }
 
-  public static void main(String[] args) {
-    new AddressDialog();
-  }
 }

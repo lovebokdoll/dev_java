@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch RectAngle3Main",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.RectAngle3Main",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch RectAngle2Main",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.RectAngle2Main",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch RectAngle",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.RectAngle",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Sub3",
+      "request": "launch",
+      "mainClass": "dev_java.week3.Sub3",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main3",
+      "request": "launch",
+      "mainClass": "dev_java.week3.Main3",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch Area_1",
       "request": "launch",
       "mainClass": "dev_java.week3quize.Area_1",
