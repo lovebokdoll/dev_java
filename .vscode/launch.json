@@ -6,6 +6,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Quize7",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.Quize7",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Quize5",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.Quize5",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Quize6",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.Quize6",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Vector2",
+      "request": "launch",
+      "mainClass": "dev_java.tables.Vector2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch DeptTable3",
+      "request": "launch",
+      "mainClass": "dev_java.tables.DeptTable3",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch DeptTable2",
+      "request": "launch",
+      "mainClass": "dev_java.tables.DeptTable2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch ArrayCopy1",
+      "request": "launch",
+      "mainClass": "dev_java.tables.ArrayCopy1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch DeptTable1",
+      "request": "launch",
+      "mainClass": "dev_java.tables.DeptTable1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaxFunc",
+      "request": "launch",
+      "mainClass": "dev_java.week3quize.MaxFunc",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch Quiza4",
       "request": "launch",
       "mainClass": "dev_java.week3quize.Quiza4",
