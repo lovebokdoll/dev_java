@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Vector21",
+      "request": "launch",
+      "mainClass": "dev_java.week4.Vector21",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch JTable7Dialog",
+      "request": "launch",
+      "mainClass": "dev_java.tables.JTable7Dialog",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch DeptTable7",
+      "request": "launch",
+      "mainClass": "dev_java.tables.DeptTable7",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Button1Main",
+      "request": "launch",
+      "mainClass": "dev_java.week4.Button1Main",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch Quize7",
       "request": "launch",
       "mainClass": "dev_java.week3quize.Quize7",
