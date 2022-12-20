@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch VectorCRUD2",
+      "request": "launch",
+      "mainClass": "dev_java.week4.VectorCRUD2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch CarVoMain",
+      "request": "launch",
+      "mainClass": "dev_java.week4.CarVoMain",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch VectorCRUD",
+      "request": "launch",
+      "mainClass": "dev_java.week4.VectorCRUD",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch List2",
+      "request": "launch",
+      "mainClass": "dev_java.week4.List2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch List1",
+      "request": "launch",
+      "mainClass": "dev_java.week4.List1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch Vector21",
       "request": "launch",
       "mainClass": "dev_java.week4.Vector21",
