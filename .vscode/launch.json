@@ -6,6 +6,62 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch CalculatorApp",
+      "request": "launch",
+      "mainClass": "dev_java.week4.CalculatorApp",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch A1",
+      "request": "launch",
+      "mainClass": "dev_java.week4.A1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch VectorCRUD3",
+      "request": "launch",
+      "mainClass": "dev_java.week4.VectorCRUD3",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Operator12Form",
+      "request": "launch",
+      "mainClass": "dev_java.week4.Operator12Form",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch ForTest",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.ForTest",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch StringArray",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.StringArray",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Run",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.Run",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.Test",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch VectorCRUD2",
       "request": "launch",
       "mainClass": "dev_java.week4.VectorCRUD2",

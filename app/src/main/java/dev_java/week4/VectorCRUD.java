@@ -7,7 +7,6 @@ import java.util.Vector;
 //index가 다르면 중복값 저장가능
 import javax.swing.JOptionPane;
 
-import dev_java.ch02.Array;
 
 public class VectorCRUD {
  static Vector<String[]> vdept = new Vector<>();
