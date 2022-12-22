@@ -15,6 +15,10 @@ public class Money {
   return money;
  }
 
+ public void pay(int money) {
+  this.money = this.money - money;
+ }
+
  public void setMoney(int money) {
   this.money = money;
  }

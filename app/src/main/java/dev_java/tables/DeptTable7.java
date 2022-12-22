@@ -12,6 +12,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Vector;
+import dev_java.week4.DeptVO;
 
 public class DeptTable7 extends JFrame implements ActionListener {
   // 선언부
@@ -35,7 +36,7 @@ public class DeptTable7 extends JFrame implements ActionListener {
   JButton jbtn_upd = new JButton("수정");
   JButton jbtn_del = new JButton("삭제");
   JButton jbtn_det = new JButton("상세보기");
-  static Vector<String[]> vdata = new Vector<>(); // vdata.size=0;
+  static Vector<DeptVO> vdata = new Vector<>(); // vdata.size=0;
 
   // 생성자
   public DeptTable7() {
@@ -80,10 +81,14 @@ public class DeptTable7 extends JFrame implements ActionListener {
       return;// refreshData()탈출
     }
 
-    // 벡터의 크기만큼 반복하면서 dtm_dept 데이터셋에 String[]추가함
     for (int i = 0; i < vdata.size(); i++) {
-      String[] oneRow = vdata.get(i);
-      dtm_dept.addRow(oneRow);
+      // 벡터의 크기만큼 반복하면서 dtm_dept 데이터셋에 String[]추가함
+      DeptVO oneRow = vdata.get(i);
+      Vector<Object> vone = new Vector<>();
+      vone.add(oneRow.getDeptno());
+      vone.add(oneRow.getDname());
+      vone.add(oneRow.getLoc());
+      dtm_dept.addRow(vone);
     }
   }
 
@@ -96,7 +101,7 @@ public class DeptTable7 extends JFrame implements ActionListener {
       refreshData();
     } else if (obj == jbtn_ins) {
 
-      jtd7.set("입력", true, null);
+      jtd7.set("입력", true, null, true);
 
     }
     // 수정할라고?
@@ -105,15 +110,21 @@ public class DeptTable7 extends JFrame implements ActionListener {
       int index = jtb_dept.getSelectedRow(); // 선택된 로우의 인덱스값을 가져온다.
       // 데이터셋 객체로 백터를 사용중이니 백터에서 꺼낸 값을 String[]초기화
       // 테이블의 양식폼인 JTable 이벤트로 얻어롬
-      String[] oneRow = vdata.get(index);
-      jtd7.set("수정", true, oneRow);
+      DeptVO pdVO = vdata.get(index);
+      jtd7.set("수정", true, pdVO, true);
     }
     // 상세보기 원해?
     else if (obj == jbtn_det) {
-
+      int index = jtb_dept.getSelectedRow();
+      if (index == -1) { //-1은 end of file의 의미. 끝까지 다 찾았는데 없다...!
+        JOptionPane.showMessageDialog(this, "상세보기 할 것 선택하세요");
+        return;// actionPerformed 탈출함
+      }
+      // 벡터 안에서 사용자가 선택한 DeptVO를 찾아야 하니까 그러니까 선택하세요@@@@!!!!
+      DeptVO pdVO = vdata.get(index);
+      jtd7.set("상세보기", true, pdVO, false);
       // jtd7.set("상세보기",true,데이터로우값-String[]);
     }
-
   }
 
   public static void main(String[] args) {

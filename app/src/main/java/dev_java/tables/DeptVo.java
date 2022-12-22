@@ -1,6 +1,7 @@
 package dev_java.tables;
+
 //다른 클래스에서 공통적으로 사용할꺼라서 클래스를 하나 만들었음
-public class DeptVo {
+public class DeptVO {
  private int deptno;
  private String dname;
  private String loc;
@@ -15,6 +16,10 @@ public class DeptVo {
 
  public String getDname() {
   return this.dname;
+ }
+
+ public String getLoc() {
+  return this.loc;
  }
 
  public void setDname(String dname) {
