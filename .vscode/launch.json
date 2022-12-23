@@ -6,6 +6,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch TalkClient",
+      "request": "launch",
+      "mainClass": "dev_java.network2.TalkClient",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TalkServer",
+      "request": "launch",
+      "mainClass": "dev_java.network2.TalkServer",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch LoginForm",
+      "request": "launch",
+      "mainClass": "dev_java.network1.LoginForm",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TimeClientView",
+      "request": "launch",
+      "mainClass": "dev_java.network1.TimeClientView",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TimeClient",
+      "request": "launch",
+      "mainClass": "dev_java.network1.TimeClient",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TimeServer",
+      "request": "launch",
+      "mainClass": "dev_java.network1.TimeServer",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch ArrayCopy1",
       "request": "launch",
       "mainClass": "dev_java.week4quize.ArrayCopy1",

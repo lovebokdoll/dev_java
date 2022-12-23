@@ -8,7 +8,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
-import javax.swing.undo.StateEditable;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -108,12 +107,12 @@ public class JTable7Dialog extends JDialog implements ActionListener {
   this.setVisible(isView);
   this.pdVO = pdVO;
   setValue(pdVO);
-  StateEditable(isEdit);
+  setEditable(isEdit);
  }
 
  // 입력 혹은 수정일 때는 true로 처리하고
  // 상세보기일때는 false를 주어서 얼림
- private void StateEditable(boolean isEdit) {
+ private void setEditable(boolean isEdit) {
   jtf_deptno.setEditable(isEdit);
   jtf_dname.setEditable(isEdit);
   jtf_loc.setEditable(isEdit);
