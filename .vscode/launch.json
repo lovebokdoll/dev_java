@@ -6,6 +6,132 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch TalkClient",
+      "request": "launch",
+      "mainClass": "dev_java.network2.TalkClient",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TalkServer",
+      "request": "launch",
+      "mainClass": "dev_java.network2.TalkServer",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch LoginForm",
+      "request": "launch",
+      "mainClass": "dev_java.network1.LoginForm",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TimeClientView",
+      "request": "launch",
+      "mainClass": "dev_java.network1.TimeClientView",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TimeClient",
+      "request": "launch",
+      "mainClass": "dev_java.network1.TimeClient",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TimeServer",
+      "request": "launch",
+      "mainClass": "dev_java.network1.TimeServer",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch ArrayCopy1",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.ArrayCopy1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch ArrayCopy11",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.ArrayCopy11",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch ArrayCopy1",
+      "request": "launch",
+      "mainClass": "dev_java.week4.ArrayCopy1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Mother",
+      "request": "launch",
+      "mainClass": "dev_java.week4.목221222.Mother",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch CalculatorApp",
+      "request": "launch",
+      "mainClass": "dev_java.week4.CalculatorApp",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch A1",
+      "request": "launch",
+      "mainClass": "dev_java.week4.A1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch VectorCRUD3",
+      "request": "launch",
+      "mainClass": "dev_java.week4.VectorCRUD3",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Operator12Form",
+      "request": "launch",
+      "mainClass": "dev_java.week4.Operator12Form",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch ForTest",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.ForTest",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch StringArray",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.StringArray",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Run",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.Run",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test",
+      "request": "launch",
+      "mainClass": "dev_java.week4quize.Test",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch VectorCRUD2",
       "request": "launch",
       "mainClass": "dev_java.week4.VectorCRUD2",
