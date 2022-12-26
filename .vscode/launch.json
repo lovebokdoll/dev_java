@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch JFrameTimerClose",
+      "request": "launch",
+      "mainClass": "dev_java.thread1.JFrameTimerClose",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch DuckSimulation",
+      "request": "launch",
+      "mainClass": "dev_java.design.DuckSimulation",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch JDBCTest",
+      "request": "launch",
+      "mainClass": "dev_java.oracle.JDBCTest",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch TalkClient",
       "request": "launch",
       "mainClass": "dev_java.network2.TalkClient",
