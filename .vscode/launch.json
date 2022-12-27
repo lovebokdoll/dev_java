@@ -6,23 +6,90 @@
   "configurations": [
     {
       "type": "java",
+<<<<<<< HEAD
       "name": "Launch Method_parameter_return",
       "request": "launch",
       "mainClass": "dev_java.연습.Method_parameter_return",
+=======
+      "name": "Launch ServerTest",
+      "request": "launch",
+      "mainClass": "dev_java.network3.ServerTest",
+>>>>>>> 3a2e995f98fced57a0cef5746d3e9adddd07343a
       "projectName": "app"
     },
     {
       "type": "java",
+<<<<<<< HEAD
       "name": "Launch Method_parameter2",
       "request": "launch",
       "mainClass": "dev_java.연습.Method_parameter2",
+=======
+      "name": "Launch KiwiServer",
+      "request": "launch",
+      "mainClass": "dev_java.network3.KiwiServer",
+>>>>>>> 3a2e995f98fced57a0cef5746d3e9adddd07343a
       "projectName": "app"
     },
     {
       "type": "java",
+<<<<<<< HEAD
       "name": "Launch Method_parameter",
       "request": "launch",
       "mainClass": "dev_java.연습.Method_parameter",
+=======
+      "name": "Launch BananaServer",
+      "request": "launch",
+      "mainClass": "dev_java.network3.BananaServer",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch MainThread1_1",
+      "request": "launch",
+      "mainClass": "dev_java.week5.MainThread1_1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TalkServer1",
+      "request": "launch",
+      "mainClass": "dev_java.network3.TalkServer1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TalkClient",
+      "request": "launch",
+      "mainClass": "dev_java.network3.TalkClient",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TalkServer",
+      "request": "launch",
+      "mainClass": "dev_java.network3.TalkServer",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch JFrameTimerClose",
+      "request": "launch",
+      "mainClass": "dev_java.thread1.JFrameTimerClose",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch DuckSimulation",
+      "request": "launch",
+      "mainClass": "dev_java.design.DuckSimulation",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch JDBCTest",
+      "request": "launch",
+      "mainClass": "dev_java.oracle.JDBCTest",
+>>>>>>> 3a2e995f98fced57a0cef5746d3e9adddd07343a
       "projectName": "app"
     },
     {
