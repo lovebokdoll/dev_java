@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Method_parameter_return",
+      "request": "launch",
+      "mainClass": "dev_java.연습.Method_parameter_return",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Method_parameter2",
+      "request": "launch",
+      "mainClass": "dev_java.연습.Method_parameter2",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Method_parameter",
+      "request": "launch",
+      "mainClass": "dev_java.연습.Method_parameter",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch TalkClient",
       "request": "launch",
       "mainClass": "dev_java.network2.TalkClient",
