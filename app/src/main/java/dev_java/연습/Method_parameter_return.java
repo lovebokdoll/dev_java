@@ -3,6 +3,7 @@ package dev_java.연습;
 public class Method_parameter_return {
 
         public static String numbering(int init ,int limit){
+            //numbering 메소드가 return할 값이 반드시 String이라는것 의미함!!
             int i=init;
             //만들어지는 숫자들을 output이라는 변수에 담기 위해서 변수에 빈값을 주었다.
             String output="";
