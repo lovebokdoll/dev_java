@@ -2,15 +2,15 @@
 package dev_java.network3;
 
 import java.util.StringTokenizer;
-import java.util.Vector;​
+import java.util.Vector;
 
 public class TalkClientThread extends Thread {
 	TalkClient tc = null;
-​
+
 	public TalkClientThread(TalkClient tc) {
 		this.tc = tc;
 	}
-​
+
 	// 서버측에서 클라이언트가 접속하면 접속자의 정보를 List<TalkServerThread> add(스레드생성자)했고
 	// 메시지를 청취하자 마자 클라이언트측에 반복문을 돌려서 쓰기 한다.(전송함) - broadCastring(String msg)
 	@Override

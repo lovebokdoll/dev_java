@@ -15,16 +15,14 @@ import java.awt.event.ActionListener;
 //자바는 단일상속만 가능함
 //자바는 단일상속의 단점을 보완하기 위해 인터페이스는 다중으로 처리가능함(구현체클래스)
 //상속을 받거나 implements하면 부모클래스나 인터페이스가 정의하고 있는 메소드를 
-//재정의 할 수 있다(Overriding-선언부는 완전 일치해야함)
-//인터페이스는 오로지 추상메소드만 갖는다-> Runnable도 인터페이스니까 추상메소드가 있다
-//그게 run메소드이다.
 
-public class TalkServer extends JFrame implements Runnable, ActionListener {
+//runnable 메소드 사용하지 않은경우!
+public class TalkServer1 extends JFrame implements ActionListener {
 	// 선언부
 	// 클라이언트측에서 new Socket하면 그 소켓정보를 받아서 쓰레드로 넘김
 	TalkServerThread tst = null;
 	// 동시에 여러명이 접속하니까 List - Vector<>(); 멀티스레드 안전, 속도 느림
-	List<TalkServerThread> globalList = null;
+	List<TalkServerThread1> globalList = null;
 	ServerSocket server = null;
 	Socket socket = null;
 	JTextArea jta_log = new JTextArea(10, 30);
@@ -32,8 +30,8 @@ public class TalkServer extends JFrame implements Runnable, ActionListener {
 			JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 	JButton jbtn_log = new JButton("로그저장");
 
-	// 생성자
-	public TalkServer() {
+	// 생성자-
+	public TalkServer1() {
 		// initDisplay();//시점문제- 스케쥴링
 	}
 
@@ -47,18 +45,16 @@ public class TalkServer extends JFrame implements Runnable, ActionListener {
 	}
 
 	public static void main(String[] args) {
-		TalkServer ts = new TalkServer();
+		TalkServer1 ts = new TalkServer1();
+
 		ts.initDisplay();
-		Thread th = new Thread(ts);// 스레드 생성시 파라미터로 TalkServer객체를 넘김
-		// 스레드 pool에 있는 스레드중에서 우선순위를 따지고 차례대로 입장한다.(ready상태)
-		// 미리 스레드를 여러개 만들어 놓고 재사용 -> 스레드 생성시간 절약
-		// ==> 우선순위때문에 직접입력하지 않고 메소드를 호출
-		th.start();// 52번 호출됨 - 지연발생함 - 클라이언트가 접속할때까지 기다림...
+		// 아래코드에서 에러발생하는것은 Runnable을 implements에서 제거하였기 때문임
+		// Thread th = new Thread(ts);// 스레드 생성시 파라미터로 TalkServer객체를 넘김
+		ts.init();// 나는 서버 => 대기탄다 , 누구를 기다림? 클라이언트
 	}
 
 	// 서버소켓과 클라이언트 소켓을 연결
-	@Override
-	public void run() {
+	public void init() {
 		// 서버에 접속해온 클라이언트 스레드 정보를 관리할 벡터 생성하기
 		// 벡터는 멀티스레드 안전 => 서버에 동시접속자수가 여러명이니까
 		// 그래서 백터안에는 클라이언트를 관리하는 스레드를 추가해야 한다.
@@ -83,7 +79,16 @@ public class TalkServer extends JFrame implements Runnable, ActionListener {
 				socket = server.accept();
 				jta_log.append("client info:" + socket + "\n");
 				jta_log.append("client info:" + socket.getInetAddress() + "\n");
-				TalkServerThread tst = new TalkServerThread(this);
+				// this사용하는 세가지 경우
+				// DeptVO - this =>전변에대한 초기화
+				// 이벤트 처리시 이벤트처리를 담당하는 클래스를 가리키는 목적으로 this사용함
+				// ActionListener구현할때 -버튼.addActionListener(this);
+				// new XXX(this) =>클래스분리 , 나눌때 , MVC패턴으로 구현할 때
+				// 생성자 호출시 파라미터로 들어오는 this는 현재 인스턴스화된 객체를 가리킴3
+				// 아래는 객체를 생성하는 것과 동시에 생성자를 호출하는데 클래스이름을 바꾸었다 그러니까 에러발생
+				// 해결방법은 TalkServerThread의 생성자 파마리터 타입을 TalkServer1으로 변경하면 됨
+				TalkServerThread1 tst = new TalkServerThread1(this);// this는 TalkServer1임
+				// TalkServerThread tst = new TalkServerThread(super);//this는 JFrame
 				tst.start();
 			}
 		} catch (Exception e) {

@@ -5,8 +5,8 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.StringTokenizer;​
 
-public class TalkServerThread extends Thread {
-	TalkServer ts = null;
+public class TalkServerThread1 extends Thread {
+	TalkServer1 ts = null;
 	Socket client = null;
 	ObjectOutputStream oos = null;
 	ObjectInputStream ois = null;
@@ -14,10 +14,10 @@ public class TalkServerThread extends Thread {
 	String chatName = null;
 
 	// 생성자
-	public TalkServerThread() {
+	public TalkServerThread1() {
 	}
 
-	public TalkServerThread(TalkServer ts) {
+	public TalkServerThread1(TalkServer1 ts) { //()안의TalkServer1가 TalkServer1에서 this였다!!!
 		this.ts = ts;
 		this.client = ts.socket;
 		try {
@@ -30,7 +30,7 @@ public class TalkServerThread extends Thread {
 			st.nextToken();// 100 skip처리
 			chatName = st.nextToken();// 토마토 저장
 			ts.jta_log.append(chatName + "님이 입장하였습니다.\n");
-			for (TalkServerThread tst : ts.globalList) {
+			for (TalkServerThread1 tst : ts.globalList) {
 				this.send(Protocol.TALK_IN + Protocol.separator + tst.chatName);
 			}
 			// 현재 서버에 입장한 클라이언트 스레드 추가하기
@@ -43,7 +43,7 @@ public class TalkServerThread extends Thread {
 
 	// 현재 입장해 있는 친구들 모두에게 메시지 전송하기 구현
 	public void broadCasting(String msg) {
-		for (TalkServerThread tst : ts.globalList) {
+		for (TalkServerThread1 tst : ts.globalList) {
 			tst.send(msg);
 		}
 	}

@@ -6,6 +6,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ServerTest",
+      "request": "launch",
+      "mainClass": "dev_java.network3.ServerTest",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch KiwiServer",
+      "request": "launch",
+      "mainClass": "dev_java.network3.KiwiServer",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch BananaServer",
+      "request": "launch",
+      "mainClass": "dev_java.network3.BananaServer",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch MainThread1_1",
+      "request": "launch",
+      "mainClass": "dev_java.week5.MainThread1_1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TalkServer1",
+      "request": "launch",
+      "mainClass": "dev_java.network3.TalkServer1",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TalkClient",
+      "request": "launch",
+      "mainClass": "dev_java.network3.TalkClient",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch TalkServer",
+      "request": "launch",
+      "mainClass": "dev_java.network3.TalkServer",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
       "name": "Launch JFrameTimerClose",
       "request": "launch",
       "mainClass": "dev_java.thread1.JFrameTimerClose",
