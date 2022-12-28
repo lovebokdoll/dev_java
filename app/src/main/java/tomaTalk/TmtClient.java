@@ -17,6 +17,10 @@ import dev_java.view.ActionListener;
  */
 public class TmtClient extends JFrame implements ActionListener {
 
+    public TmtClient(){
+        
+    }
+
     void receive(){ // 클라이언트의 데이터 받는 메소드
 
     }
