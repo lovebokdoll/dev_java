@@ -141,7 +141,10 @@ public class DBConnectionMgr {
 /*
  * JDBC API이용하여 DB연동하기
  * 1.각 제조사가 제공하는 드라이버 클래스를 로딩한다.(ojdbc6.jar)
+ * Class.forName(드라이버 클래스 적음 - 풀네임)
  * 2.물리적으로 떨어져 있는 오라클 서버와 연결통로를 확보한다.
+ * Connection은 인터페이스이다. - 오른쪽에 구현체 클래스가 와야한다.
+ * Connection con = DriverManager.getConnextion(URL,"scott","toger");
  * 3.DML문(데이터 조작문)을 자바에서 오라클 서버로 전달해 줄 인터페이스를 생성한다.
  * (Statement:정적쿼리문,PreparsdStatement:동적쿼리문 지원)
  * 4.SELECT문의 경우 오라클 서버에서 제공하는 커서를 지원하는 ResultSet인터페이스를 활용하여

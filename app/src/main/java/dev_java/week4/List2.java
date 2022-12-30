@@ -38,7 +38,7 @@ public class List2 {
   }
 //아래와 같이 사용할 수 없다
 //왜냐면 Vector의 제네릭타입이 String이니까
-  Iterator<Object> iter3 = fruitList.iterator(); 
+ // Iterator<Object> iter3 = fruitList.iterator(); 
   Iterator<String> iter4 = fruitList.iterator();  //=> 이렇게 타입을 맞춰줘야 한다.
   while (iter3.hasNext()) {
    //다이아몬드연산자의 의미임 => 타입을 명시적으로 작성하는것 권장

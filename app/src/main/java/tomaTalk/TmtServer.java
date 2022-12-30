@@ -31,7 +31,7 @@ public class TmtServer extends JFrame implements Runnable, ActionListener {
     TmtServerThread tmt = null;
     List<TmtServerThread> globalList = null;// 동시접속 할때 안전하게 벡터로
     ServerSocket server = null;
-    Socket socket = null;//client와 통신하기 위해 생성
+    Socket socket = null;// client와 통신하기 위해 생성
     JTextArea jta_log = new JTextArea(20, 20);
     JButton jbtn_log = new JButton("로그저장");
 
@@ -43,10 +43,7 @@ public class TmtServer extends JFrame implements Runnable, ActionListener {
     // 화면처리부
 
     public void initDisplay() {
-        jbtn_log.addActionListener(this);
-        this.add("North", jbtn_log);
-        this.setSize(500, 400);
-        this.setVisible(true);
+
     }
 
     // 메인메소드
@@ -64,7 +61,7 @@ public class TmtServer extends JFrame implements Runnable, ActionListener {
         globalList = new Vector<>();
         boolean isstop = false;
         try {
-            
+
             server = new ServerSocket(1000);
             jta_log.append("Server Ready\n");
             while (!isstop) {
