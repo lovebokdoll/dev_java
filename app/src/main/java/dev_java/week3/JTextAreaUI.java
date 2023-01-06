@@ -57,7 +57,7 @@ public class JTextAreaUI implements ActionListener {
       if (jtf == obj) { // JTextField에 엔터친거야?
          // JTextField에 입력한 문자열 받기
          String input = jtf.getText();
-         // jta.append("JTeatAreaUI원본:" + input + "\n");
+         //jta.append("JTeatAreaUI원본:" + input + "\n");
          jtaUILogic.account(input);
          jtf.setText("");
       }
